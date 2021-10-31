@@ -37,5 +37,5 @@ app.get('*', (req, res) =>
 );
 
 app.listen(process.env.PORT || 5000, () => {
-  console.log('Server is ready at http://localhost:5000');
+  console.log(`Server is ready at http://localhost:${process.env.PORT}`);
 });
